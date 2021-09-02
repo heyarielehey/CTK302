@@ -5,6 +5,7 @@ function setup() {
   createCanvas(500, 500);
   f1 = loadFont('assets/Cabron.ttf') ;
   f2 = loadFont('assets/goodtimes.ttf') ;
+textAlign (CENTER);
 }
 
 function draw() {
