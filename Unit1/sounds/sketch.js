@@ -12,6 +12,7 @@ function setup() {
 
 function draw() {
   background("#ae7acf");
+  text("my backstory is this \nbut it is very long", 80, 20) ;
 }
 
 function mouseReleased() {

@@ -28,7 +28,7 @@ rect (100, 100, 100, 100);
   fill(0);
   text(mouseX + ", " + mouseY, 40, 40);
 
-}
+
 
 
 
@@ -38,9 +38,8 @@ rect (100, 100, 100, 100);
 // record the mouse location in console when clicked
 function mouseReleased() {
   print(mouseX + ", " + mouseY);
+text("my backstory is this \nbut it is very long", 80, 20) ;
 }
-
-
 
   function setup() {
   createCanvas(500, 500);
