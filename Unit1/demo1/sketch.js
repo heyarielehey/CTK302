@@ -93,7 +93,7 @@ text("drabby.", 444, 162);
   // this shows mouse location - comment it out when you're done!
 
   fill(300);
-  text(mouseX + ", " + mouseY, 40, 40);
+  //text(mouseX + ", " + mouseY, 40, 40);
 
 }
 
@@ -106,7 +106,3 @@ text("drabby.", 444, 162);
 function mouseReleased() {
   print(mouseX + ", " + mouseY);
 }
-
-
-
-  
