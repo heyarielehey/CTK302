@@ -16,37 +16,39 @@ function preload() {
 }
 
 
-function() {
+function setup() {
   createCanvas(500, 500);
 }
 
 function draw() {
-switch(state) {
+  switch (state) {
 
-  case 0:
-  song1.play() ; // spawn song 1
-  state = 1 ;
-  break;
+    case 0:
+      song1.play(); // spawn song 1
+      state = 1;
+      break;
 
-  case 1: // listen to song 1
-  background('red') ;
+    case 1: // listen to song 1
+      background('red');
 
-  break;
+      break;
 
-  case 2: // listen to 2
-  song2.play();
-  state = 3 ;
-  break;
+    case 2: // listen to 2
+      song2.play();
+      state = 3;
+      break;
 
-  case 3:
-  break;
+    case 3: //listen to song 2
+      background('green');
+      break;
 
-  case 4:
-  break;
+    case 4:
+      song3.play();
+      break;
 
-  case 5:
-  background('yellow');
-  break;
+    case 5:
+      background('yellow');
+      break;
   }
 }
 
