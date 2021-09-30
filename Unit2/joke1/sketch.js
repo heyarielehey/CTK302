@@ -7,14 +7,14 @@ function setup() {
 function draw() {
   switch (state) {
 
-    case 0;
-    background('blue');
-    text("what do you call a sad strawberry?", 100, 100)
+    case 0:
+    background('#fc0349');
+    text("what do you call a sad strawberry?", 250, 250)
     break;
 
     case 1:
-      background("yellow");
-      text("blueberry", 100, 100);
+      background("#73c1e6");
+      text("a blueberry.", 250, 250);
 
       break;
   }
@@ -26,5 +26,4 @@ function mouseReleased() {
   if (state > 1) {
     state = 0;
   }
-}
 }
