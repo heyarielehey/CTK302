@@ -1,5 +1,5 @@
 let song1, song2, song3;
-
+let state = 0;
 
 function preload() {
   song1 = loadSound("assets/donkey.mp3");
@@ -8,7 +8,7 @@ function preload() {
 
   song1.play();
   song2.play();
-  song2.play();
+  song3.play();
   song1.pause();
   song2.pause();
   song3.pause();
@@ -44,7 +44,9 @@ function draw() {
 
     case 4:
       song3.play();
+      state = 5;
       break;
+
 
     case 5:
       background('yellow');
@@ -58,5 +60,9 @@ function mouseReleased() {
   song2.pause();
   song3.pause();
 
+state++;
+if (state > 5) {
+state = 0;
 
+}
 }
