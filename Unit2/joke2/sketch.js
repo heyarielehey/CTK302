@@ -9,13 +9,13 @@ function draw() {
   switch (state) {
 
     case 0:
-    background('#fc0349');
-    text("what do you call a sad strawberry?", 250, 250)
+    background('#cb92e0');
+    text("I think I may have to sue Spotify.", 250, 250)
     break;
 
     case 1:
-      background("#73c1e6");
-      text("a blueberry...the saddest berry ever.", 250, 250);
+      background("#95ebf5");
+      text("...for not including him in the hottest singles of the week list.", 100, 100);
 
       break;
   }
