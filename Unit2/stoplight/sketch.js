@@ -1,6 +1,6 @@
 let state = 0;
 let timer = 0;
-//let x = 0;
+let x = 0;
 let vel = 0;
 
 
@@ -25,7 +25,7 @@ function draw() {
       fill('black');
       ellipse(width / 2, height / 2, 150, 150);
       ellipse(width / 2, height / 2 + 180, 150, 150);
-      vel = 0 ;
+      vel = 0;
       break;
 
     case 1: //green
@@ -34,7 +34,7 @@ function draw() {
       ellipse(width / 2, height / 2, 150, 150);
       fill('green');
       ellipse(width / 2, height / 2 + 180, 150, 150);
-      vel = 10 ;
+      vel = 10;
       break;
 
     case 2: //yellow
@@ -44,9 +44,10 @@ function draw() {
       ellipse(width / 2, height / 2, 150, 150);
       fill('black');
       ellipse(width / 2, height / 2 + 180, 150, 150);
-      vel = 5 ;
+      vel = 5;
       break;
   }
+  
   timer++;
   if (timer > 3 * 60) {
     timer = 0;
@@ -59,7 +60,7 @@ function draw() {
 
   fill('purple');
   rect(x, height - 100, 100, 50);
-  x = x + vel ;
+  x = x + vel;
   //x = x + 10 ;
   if (x > width) {
     x = 0;
