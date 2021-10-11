@@ -47,7 +47,7 @@ function draw() {
       vel = 5;
       break;
   }
-  
+
   timer++;
   if (timer > 3 * 60) {
     timer = 0;

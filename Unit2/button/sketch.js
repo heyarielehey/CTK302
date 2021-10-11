@@ -1,4 +1,4 @@
-flet state = 0;
+let state = 0;
 
 function setup() {
   createCanvas(400, 400);
