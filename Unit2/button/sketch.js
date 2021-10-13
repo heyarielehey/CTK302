@@ -9,7 +9,7 @@ function draw() {
 
   background(100);
   fill(255) ;
-  text(mouseX + "," +mouseY, 50, 50) ;
+  text(mouseX + "," + mouseY, 50, 50) ;
 
   switch (state) {
 
