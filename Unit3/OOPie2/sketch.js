@@ -19,8 +19,13 @@ class Car {
 
   constructor() {
     //attributes
-    this.pos = createVector(width / 2, height / 2) ;
-    this.vel = createVector(random(-3, 3), random(-3, 3)) ;
+    this.pos = createVector(100, 100) ;
+    this.vel = createVector(random(10), random(10)) ;
+    this.r = random(255) ;
+    this.g = random(255) ;
+    this.b = random(255) ;
+    this.a = random(200, 255) ;
+    this.s = random(5, 20) ;
 
   }
 
