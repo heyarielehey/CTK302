@@ -62,7 +62,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("feed me", width / 2, height / 2);
+  text("eat", width / 2, height / 2);
 
 }
 
