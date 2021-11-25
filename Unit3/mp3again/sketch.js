@@ -3,7 +3,7 @@ var frogPos ;
 var myState = 0;
 var timer = 20 * 60;
 var heart;
-var peacesign;
+var gyronoback;
 var song;
 
 function setup() {
@@ -14,7 +14,7 @@ function setup() {
       cars.push(new Car());
   }
   frogPos = createVector(width/2, height-100);
-  guitar = loadImage('assets/peacesign.png');
+  guitar = loadImage('assets/gyronoback.png');
   pick = loadImage('assets/heart.png');
 
   rectMode(CENTER);
