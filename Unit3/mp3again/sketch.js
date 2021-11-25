@@ -29,8 +29,8 @@ function draw() {
     case 0:
     image(stage, 0, 0);
       textSize(24);
-      text("Use WASD or the Arrow Keys to strum the guitar!", width/2, height/2);
-      text("press any key to begin",width/2)
+      text("Use the Arrow Keys to move the GYRO", width/2, height/2);
+      text("Press Any Key to Begin",width/2)
       break;
 
     case 1:
@@ -44,21 +44,21 @@ function draw() {
     case 2:
       textSize(24);
       image(stage, 0, 0);
-      fill('black');
+      fill('#EF2D56');
       rect(width/2, height/2, 600, 200);
       fill('white')
-      text("Congratulations! Carnegie Hall Awaits :)",width/2, height/2)
-      text("press any key to play again", width/2, 400)
+      text("YAY! You LOVE Gyros as much as ME---go buy one",width/2, height/2)
+      text("Press Any Key to LOVE Gyros Again", width/2, 400)
       break;
 
     case 3:
       textSize(24);
       image(stage, 0, 0);
-      fill('black');
+      fill('#3B1F2B');
       rect(width/2, height/2, 600, 200);
       fill('white')
-      text("oof, you were unable to finish your song", width/2, height/2);
-      text("press any key to try again", width/2, 400);
+      text("Why Do You HATE Gyros? You LOSE.", width/2, height/2);
+      text("Press Any Key to Try & LOVE Again", width/2, 400);
 
       break;
 
