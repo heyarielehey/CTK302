@@ -8,7 +8,7 @@ var song;
 
 function setup() {
   stage = loadImage('assets/bgcalm.jpeg');
-  song = loadSound('assets/bs-relaxing.mp3');
+  song = loadSound('assets/bs-littleidea.mp3');
   createCanvas(windowWidth, windowHeight);
   for (var i = 0; i < 10; i++) {
       cars.push(new Car());
