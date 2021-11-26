@@ -11,6 +11,7 @@ var desc;
 
 
 function setup() {
+  stage = loadImage('assets/colorfulmountain.jpeg');
   createCanvas(400, 400);
 
 
