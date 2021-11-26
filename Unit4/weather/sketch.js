@@ -13,8 +13,7 @@ var desc;
 
 function setup() {
 
-
-  createCanvas(400, 400);
+ createCanvas(400, 400);
 f1 = loadFont('assets/goodtimes.ttf') ;
 
   // HERE is the call to get the weather.
