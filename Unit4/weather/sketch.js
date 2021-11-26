@@ -11,14 +11,15 @@ var desc;
 
 
 function setup() {
-  stage = loadImage('assets/colorfulmountain.jpeg');
+
+
   createCanvas(400, 400);
 
 
   // HERE is the call to get the weather.
 
   var myCityString =
-    "https://api.openweathermap.org/data/2.5/weather?q=Bloomington,IN,US&units=imperial&";
+    "https://api.openweathermap.org/data/2.5/weather?q=Portland,OR,US&units=imperial&";
 
   //You can also use "zipcode" - var myIDString = 'https://api.openweathermap.org/data/2.5/weather?zip=61820,us&units=imperial&';
 
@@ -27,6 +28,7 @@ function setup() {
   var myBigString = myCityString + myIDString;
 
   loadJSON(myBigString, gotData); // that gotData function happens when JSON comes back.
+
 }
 
 function gotData(data) {
@@ -47,7 +49,7 @@ function draw() {
       break;
 
     case 1:
-      background(200);
+      background("#C75000");
       fill("black");
       text("What is the weather in " + weather.name + "?", 20, 20);
       text("windspeed is " + windspeed, 20, 40);
@@ -58,8 +60,8 @@ function draw() {
       // cloud
       fill("white");
       noStroke();
-      loadImage ("assets/gyronoback.png", 300, 200, 100);
-      //ellipse(x, 300, 200, 100);
+      //loadImage ("assets/gyronoback.png", 300, 200, 100);
+      ellipse(x, 300, 200, 100);
 
       // move the cloud's x position
       x = x + windspeed;
