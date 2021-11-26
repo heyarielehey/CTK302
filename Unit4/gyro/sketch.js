@@ -2,6 +2,7 @@
 Make sure you turn on orientation lock on your iPhone or Android device. */
 
 let alpha = 0, beta = 0 , gamma = 0; // gyroscope variablers
+let f1;
 let gyronobackImage;
 let xPosition = 0;
 let yPosition = 0;
@@ -11,12 +12,14 @@ let x = 0, y = 0, z = 0 ; // accelerometer data
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
+    f1 = loadFont('assets/Cabron.ttf') ;
 
 
 
   gyronobackImage = loadImage("assets/gyronoback.png");
   imageMode(CENTER);
   rectMode(CENTER);
+  textAlign (CENTER);
 
 }
 
@@ -60,6 +63,7 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
+  textFont('f1');
   textSize(300);
   textAlign(CENTER);
   text("eat", width / 2, height / 2);
