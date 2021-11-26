@@ -23,7 +23,7 @@ cloud = loadImage('assets/gyronoback.png');
   // HERE is the call to get the weather.
 
   var myCityString =
-    "https://api.openweathermap.org/data/2.5/weather?q=Portland,OR,US&units=imperial&";
+    "https://api.openweathermap.org/data/2.5/weather?q=Chicago,IL,US&units=imperial&";
 
   //You can also use "zipcode" - var myIDString = 'https://api.openweathermap.org/data/2.5/weather?zip=61820,us&units=imperial&';
 
