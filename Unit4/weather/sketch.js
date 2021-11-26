@@ -9,8 +9,17 @@ var temp = 0;
 var humid = 0;
 var desc;
 
+let img;
+
+function preload() {
+img = loadImage('assets/gyronoback.png');
+}
+
 function setup() {
   createCanvas(400, 400);
+
+  image(img, 400, 400);
+
 
   // HERE is the call to get the weather.
 
