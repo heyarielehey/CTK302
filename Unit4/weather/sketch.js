@@ -8,6 +8,8 @@ var windspeed = 0;
 var temp = 0;
 var humid = 0;
 var f1;
+var gyronoback;
+var colorfulmountain;
 var desc;
 
 
@@ -16,11 +18,12 @@ function setup() {
 
   createCanvas(400, 400);
 f1 = loadFont('assets/goodtimes.ttf') ;
+cloud = loadImage('assets/gyronoback.png');
 
   // HERE is the call to get the weather.
 
   var myCityString =
-    "https://api.openweathermap.org/data/2.5/weather?q=Chicago,IL,US&units=imperial&";
+    "https://api.openweathermap.org/data/2.5/weather?q=Portland,OR,US&units=imperial&";
 
   //You can also use "zipcode" - var myIDString = 'https://api.openweathermap.org/data/2.5/weather?zip=61820,us&units=imperial&';
 
@@ -63,8 +66,8 @@ function draw() {
       // cloud
       fill("white");
       noStroke();
-    //image("cloud", 300, 200, 100);
-      ellipse(x, 300, 200, 100);
+    image("cloud", 300, 200, 100);
+      //ellipse(x, 300, 200, 100);
 
       // move the cloud's x position
       x = x + windspeed;
