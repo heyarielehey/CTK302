@@ -31,14 +31,14 @@ function positionPing(position) {
 
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
 
-  background("#2452d1");
+  background("#006d77");
   fill("white");
   text("lat: " + position.latitude, 10, 40);
   text("long: " + position.longitude, 10, 90);
   text("number of updates " + num, 10, 140);
 
   text("you have moved " + distance, 10, 190);
-fill('red') ;
+fill('#ffddd2') ;
   text("remember to take a screenshot before you take a picture of your surroundings!", 10, 260, 400);
 
 }
