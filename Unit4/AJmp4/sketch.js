@@ -1,3 +1,31 @@
+// Spring 2019 Curtis Stieger's group worked on this
+
+var fence;
+var locationData;
+var num;
+var distance;
+var places = [];
+var reggieImg;
+
+function preload() {
+  locationData = getCurrentPosition();
+  reggieImg = loadImage('assets/uptowncircle.png');
+  reggieImg[2] = loadImage('assets/cookhall.png');
+  reggieImg[3] = loadImage('assets/felmeyhall.png');
+  reggieImg[4] = loadImage('assets/hancockstadium.png');
+  reggieImg[5] = loadImage('assets/nelsonsmith.png');
+  reggieImg[6] = loadImage('assets/schroederhall.png');
+  reggieImg[7] = loadImage('assets/ssb.png');
+  reggieImg[8] = loadImage('assets/turnerhall.png');
+  reggieImg[9] = loadImage('assets/universitygalleries.png');
+  reggieImg[10] = loadImage('assets/uptowncircle.png');
+
+  // TURN "reggieImg;" into "reggieImg = [];" to create an array of different images
+  //reggieImg = loadImage('assets/reggie1.jpg'); //these will change to images of pics in front of the buildings for welcome week
+  //reggieImg[2] = loadImage('assets/reggie2.jpg');
+}
+
+
 function setup() {
   //fence = new geoFenceCircle(40.506229, -88.990537, 0.02); //sets geofence location to cva room 17
   createCanvas(displayWidth, displayHeight);
@@ -10,18 +38,18 @@ function setup() {
 
   places.push(new Place(40.50864821960959, -88.99120123764614, "Fell Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
 
-  places.push(new Place(40.50917235949953, -88.99177097641105, "Cook Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.50917235949953, -88.99177097641105, "Cook Hall", .02, reggieImg[2])); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.50947612369081, -88.99174125561485, "Edwards Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-  places.push(new Place(40.50980921328644, -88.99149564020013, "Schroeder Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-  places.push(new Place(40.51014656358694, -88.9912748009074, "Felmley Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.50980921328644, -88.99149564020013, "Schroeder Hall", .02, reggieImg[6])); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.51014656358694, -88.9912748009074, "Felmley Hall", .02, reggieImg[3])); // new Place object, for ISU bridge over College Ave
 
-  places.push(new Place(40.508730456808415, -88.98572041960726, "University Galleries", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-  places.push(new Place(40.511676506705506, -88.9938474159579, "Student Services Building", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-  places.push(new Place(40.51039740494815, -88.9996815241351, "Nelson Smith", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-  places.push(new Place(40.512969573012896, -88.99488587696477, "Hancock Stadium", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-  places.push(new Place(40.509699669963155, -88.99664232253424, "Turner Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.508730456808415, -88.98572041960726, "University Galleries", .02, reggieImg[9])); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.511676506705506, -88.9938474159579, "Student Services Building", .02, reggieImg[7])); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.51039740494815, -88.9996815241351, "Nelson Smith", .02, reggieImg[5])); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.512969573012896, -88.99488587696477, "Hancock Stadium", .02, reggieImg[4])); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.509699669963155, -88.99664232253424, "Turner Hall", .02, reggieImg[7])); // new Place object, for ISU bridge over College Ave
 
-  places.push(new Place(40.50946288329222, -88.98459824742137, "Uptown Circle", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.50946288329222, -88.98459824742137, "Uptown Circle", .02, reggieImg[10])); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.47137301266825, -88.94350239220492, "Check Location", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
 
 }
