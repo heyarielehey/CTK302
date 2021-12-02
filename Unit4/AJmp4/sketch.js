@@ -33,9 +33,11 @@ function setup() {
   intervalCurrentPosition(positionPing, 5000);
 
   places.push(new Place(40.50715473783438, -88.99173550368103, "COB", .02, reggieImg)); // new Place object, for COB.... JUST SWITCHED TO NEW COORDINATES
-
+  places.push(new Place(40.50622797365503, -88.99051350503431, "CVA 17", .02, reggieImg)); // new Place object, for CVA room 17
   places.push(new Place(40.50863221414712, -88.99077591254148, "Old Union", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
-
+  places.push(new Place(40.50840289459472, -88.9909118880512, "Williams Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.50844449497366, -88.9911676488728, "Cent 4 Perf Arts", .02), reggieImg); // new Place object, for ISU bridge over College Ave
+  places.push(new Place(40.50750741811689, -88.99029850463533, "CVA Circle", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.50864821960959, -88.99120123764614, "Fell Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
 
   places.push(new Place(40.50917235949953, -88.99177097641105, "Cook Hall", .02, reggieImg[2])); // new Place object, for ISU bridge over College Ave
