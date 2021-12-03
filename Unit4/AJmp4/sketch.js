@@ -96,6 +96,6 @@ function Place(lat, long, desc, radius, reggieImg) {
   this.display = function() {
     image(reggieImg, 10, 10);
     textSize(20);
-    text("You are at " + this.desc, 10, 240);
+    text("Welcome to " + this.desc, 10, 240);
   }
 }
