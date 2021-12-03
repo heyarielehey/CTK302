@@ -11,7 +11,7 @@ function preload() {
   locationData = getCurrentPosition();
   reggieImg = loadImage('assets/isucva.png');
   reggieImg[2] = loadImage('assets/isucook.png');
-  reggieImg[3] = loadImage('assets/isufelmeley.png');
+  reggieImg[3] = loadImage('assets/isufelmley.png');
   reggieImg[4] = loadImage('assets/isuhancock.png');
   reggieImg[5] = loadImage('assets/isunelsonsmith.png');
   reggieImg[6] = loadImage('assets/isuschroeder.png');
