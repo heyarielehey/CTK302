@@ -69,7 +69,7 @@ function setup() {
   places.push(new Place(40.51039740494815, -88.9996815241351, "Nelson Smith", .02, isunelsonsmith)); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.512969573012896, -88.99488587696477, "Hancock Stadium", .02, isuhancock)); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.509699669963155, -88.99664232253424, "Turner Hall", .02, isuturner)); // new Place object, for ISU bridge over College Ave
-
+places.push(new Place(40.50685995995287, -88.99067116816788, "CVA 50", .02, isucva)); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.50946288329222, -88.98459824742137, "Uptown Circle", .02, isuuptcirc)); // new Place object, for ISU bridge over College Ave
   //places.push(new Place(40.47137301266825, -88.94350239220492, "Check Location", .02, reggieImg[1])); // new Place object, for ISU bridge over College Ave
 
