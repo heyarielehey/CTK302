@@ -9,16 +9,17 @@ var reggieImg;
 
 function preload() {
   locationData = getCurrentPosition();
-  reggieImg = loadImage('assets/uptowncircle.png');
-  reggieImg[2] = loadImage('assets/cookhall.png');
-  reggieImg[3] = loadImage('assets/felmeyhall.png');
-  reggieImg[4] = loadImage('assets/hancockstadium.png');
-  reggieImg[5] = loadImage('assets/nelsonsmith.png');
-  reggieImg[6] = loadImage('assets/schroederhall.png');
-  reggieImg[7] = loadImage('assets/ssb.png');
-  reggieImg[8] = loadImage('assets/turnerhall.png');
-  reggieImg[9] = loadImage('assets/universitygalleries.png');
-  reggieImg[10] = loadImage('assets/uptowncircle.png');
+  reggieImg = loadImage('assets/isucva.png');
+  reggieImg[2] = loadImage('assets/isucook.png');
+  reggieImg[3] = loadImage('assets/isufelmeley.png');
+  reggieImg[4] = loadImage('assets/isuhancock.png');
+  reggieImg[5] = loadImage('assets/isunelsonsmith.png');
+  reggieImg[6] = loadImage('assets/isuschroeder.png');
+  reggieImg[7] = loadImage('assets/isussb.png');
+  reggieImg[8] = loadImage('assets/isuturner.png');
+  reggieImg[9] = loadImage('assets/isuugalleries.png');
+  reggieImg[10] = loadImage('assets/isuuptcirc.png');
+  reggieImg[11] = loadImage('assets/isucob.png');
 
   // TURN "reggieImg;" into "reggieImg = [];" to create an array of different images
   //reggieImg = loadImage('assets/reggie1.jpg'); //these will change to images of pics in front of the buildings for welcome week
@@ -32,7 +33,7 @@ function setup() {
   num = 0;
   intervalCurrentPosition(positionPing, 5000);
 
-  places.push(new Place(40.50715473783438, -88.99173550368103, "COB", .02, reggieImg)); // new Place object, for COB.... JUST SWITCHED TO NEW COORDINATES
+  places.push(new Place(40.50715473783438, -88.99173550368103, "COB", .02, reggieImg[11])); // new Place object, for COB.... JUST SWITCHED TO NEW COORDINATES
   places.push(new Place(40.50622797365503, -88.99051350503431, "CVA 17", .02, reggieImg)); // new Place object, for CVA room 17
   places.push(new Place(40.50863221414712, -88.99077591254148, "Old Union", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
   places.push(new Place(40.50840289459472, -88.9909118880512, "Williams Hall", .02, reggieImg)); // new Place object, for ISU bridge over College Ave
