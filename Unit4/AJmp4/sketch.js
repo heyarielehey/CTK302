@@ -20,6 +20,8 @@ function preload() {
   reggieImg[9] = loadImage('assets/isuugalleries.png');
   reggieImg[10] = loadImage('assets/isuuptcirc.png');
   reggieImg[11] = loadImage('assets/isucob.png');
+  reggieImg[12] = loadImage('assets/isuoldunion.png');
+  reggieImg[13] = loadImage('assets/isucob.png');
 
   // TURN "reggieImg;" into "reggieImg = [];" to create an array of different images
   //reggieImg = loadImage('assets/reggie1.jpg'); //these will change to images of pics in front of the buildings for welcome week
